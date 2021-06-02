@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace Porject_Library_Management_APP
 {
-    public partial class MenuForm : Form
+    public partial class LibrariansForm : Form
     {
-        public MenuForm()
+        public LibrariansForm()
         {
             InitializeComponent();
         }
 
-        private void MenuForm_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnHome_Click(object sender, EventArgs e)
         {
             this.Close();
         }

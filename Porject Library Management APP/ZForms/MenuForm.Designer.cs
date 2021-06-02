@@ -31,11 +31,12 @@ namespace Porject_Library_Management_APP
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuForm));
             this.UpperGroupBox = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStudents = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.btnLibrarians = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
+            this.btnLibrarians = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.UpperGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +44,7 @@ namespace Porject_Library_Management_APP
             // UpperGroupBox
             // 
             this.UpperGroupBox.BackColor = System.Drawing.Color.DarkRed;
+            this.UpperGroupBox.Controls.Add(this.btnStudents);
             this.UpperGroupBox.Controls.Add(this.label1);
             this.UpperGroupBox.Controls.Add(this.btnBooks);
             this.UpperGroupBox.Controls.Add(this.btnLibrarians);
@@ -52,16 +54,19 @@ namespace Porject_Library_Management_APP
             this.UpperGroupBox.TabIndex = 0;
             this.UpperGroupBox.TabStop = false;
             // 
-            // pictureBox1
+            // btnStudents
             // 
-            this.pictureBox1.ErrorImage = global::Porject_Library_Management_APP.Properties.Resources.alfons_morales_YLSwjSy7stw_unsplash;
-            this.pictureBox1.Image = global::Porject_Library_Management_APP.Properties.Resources.alfons_morales_YLSwjSy7stw_unsplash;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 95);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(885, 421);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnStudents.BackColor = System.Drawing.Color.Brown;
+            this.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStudents.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnStudents.Location = new System.Drawing.Point(669, 0);
+            this.btnStudents.Name = "btnStudents";
+            this.btnStudents.Size = new System.Drawing.Size(102, 62);
+            this.btnStudents.TabIndex = 3;
+            this.btnStudents.Text = "Students";
+            this.btnStudents.UseVisualStyleBackColor = false;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // label1
             // 
@@ -74,6 +79,45 @@ namespace Porject_Library_Management_APP
             this.label1.Size = new System.Drawing.Size(123, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "PLibrary";
+            // 
+            // btnBooks
+            // 
+            this.btnBooks.BackColor = System.Drawing.Color.Brown;
+            this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooks.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBooks.Location = new System.Drawing.Point(570, 0);
+            this.btnBooks.Name = "btnBooks";
+            this.btnBooks.Size = new System.Drawing.Size(102, 62);
+            this.btnBooks.TabIndex = 2;
+            this.btnBooks.Text = "Books";
+            this.btnBooks.UseVisualStyleBackColor = false;
+            this.btnBooks.Click += new System.EventHandler(this.btnBooks_Click);
+            // 
+            // btnLibrarians
+            // 
+            this.btnLibrarians.BackColor = System.Drawing.Color.Brown;
+            this.btnLibrarians.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLibrarians.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibrarians.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnLibrarians.Location = new System.Drawing.Point(768, 0);
+            this.btnLibrarians.Name = "btnLibrarians";
+            this.btnLibrarians.Size = new System.Drawing.Size(102, 62);
+            this.btnLibrarians.TabIndex = 1;
+            this.btnLibrarians.Text = "Librarians";
+            this.btnLibrarians.UseVisualStyleBackColor = false;
+            this.btnLibrarians.Click += new System.EventHandler(this.btnLibrarians_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = global::Porject_Library_Management_APP.Properties.Resources.alfons_morales_YLSwjSy7stw_unsplash;
+            this.pictureBox1.Image = global::Porject_Library_Management_APP.Properties.Resources.alfons_morales_YLSwjSy7stw_unsplash;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(885, 421);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // btnLogout
             // 
@@ -88,32 +132,6 @@ namespace Porject_Library_Management_APP
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnLibrarians
-            // 
-            this.btnLibrarians.BackColor = System.Drawing.Color.Brown;
-            this.btnLibrarians.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLibrarians.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLibrarians.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLibrarians.Location = new System.Drawing.Point(768, 0);
-            this.btnLibrarians.Name = "btnLibrarians";
-            this.btnLibrarians.Size = new System.Drawing.Size(102, 62);
-            this.btnLibrarians.TabIndex = 1;
-            this.btnLibrarians.Text = "Librarians";
-            this.btnLibrarians.UseVisualStyleBackColor = false;
-            // 
-            // btnBooks
-            // 
-            this.btnBooks.BackColor = System.Drawing.Color.Brown;
-            this.btnBooks.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBooks.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBooks.Location = new System.Drawing.Point(670, 0);
-            this.btnBooks.Name = "btnBooks";
-            this.btnBooks.Size = new System.Drawing.Size(102, 62);
-            this.btnBooks.TabIndex = 2;
-            this.btnBooks.Text = "Books";
-            this.btnBooks.UseVisualStyleBackColor = false;
             // 
             // MenuForm
             // 
@@ -144,5 +162,6 @@ namespace Porject_Library_Management_APP
         private System.Windows.Forms.Button btnBooks;
         private System.Windows.Forms.Button btnLibrarians;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnStudents;
     }
 }

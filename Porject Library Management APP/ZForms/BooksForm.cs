@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Porject_Library_Management_APP
 {
-    public partial class LibrariansForm : Form
+    public partial class BooksForm : Form
     {
-        public LibrariansForm()
+        public BooksForm()
         {
             InitializeComponent();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
