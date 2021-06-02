@@ -63,6 +63,26 @@ namespace Porject_Library_Management_APP.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _55543808_101260391061323_5850799785723822080_n {
+            get {
+                object obj = ResourceManager.GetObject("55543808_101260391061323_5850799785723822080_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alfons_morales_YLSwjSy7stw_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("alfons-morales-YLSwjSy7stw-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Library3 {
             get {
                 object obj = ResourceManager.GetObject("Library3", resourceCulture);

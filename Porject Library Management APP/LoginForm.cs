@@ -13,6 +13,8 @@ namespace Porject_Library_Management_APP
     public partial class LoginForm : Form
     {
         List<Librarian> LibrariansList = new List<Librarian>();
+        MenuForm menuForm = new MenuForm();
+        
         public LoginForm()
         {
             InitializeComponent();
@@ -41,7 +43,12 @@ namespace Porject_Library_Management_APP
             }
             else
             {
-                
+                txtPassword.Clear();
+                txtUsername.Clear();
+
+                this.Hide();
+                menuForm.ShowDialog();
+                this.Show();
             }
         }
     }
