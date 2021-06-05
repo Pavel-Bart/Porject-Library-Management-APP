@@ -24,6 +24,8 @@ namespace Porject_Library_Management_APP
         {
             //Default
             LibrariansList.Add(new Librarian(0,"nkkm","nkkm"));
+            txtPassword.UseSystemPasswordChar = true;
+            
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
