@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace Porject_Library_Management_APP
 {
-    class Librarian
+    public class Librarian
     {
-        public int ID { get; set; }
+        public string Name { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Phone { get; set; }
 
-        public Librarian(int id, string username, string password)
+        public Librarian(string name, string username, string password, string phone)
         {
-            this.ID = id;
+            this.Name = name;
             this.Username = username;
             this.Password = password;
+            this.Phone = phone;
         }
     }
 }

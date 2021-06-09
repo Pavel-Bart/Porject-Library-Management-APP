@@ -102,6 +102,7 @@ namespace Porject_Library_Management_APP
             this.lstBook.Name = "lstBook";
             this.lstBook.Size = new System.Drawing.Size(387, 244);
             this.lstBook.TabIndex = 25;
+            this.lstBook.SelectedIndexChanged += new System.EventHandler(this.lstBook_SelectedIndexChanged);
             // 
             // btnDelete
             // 
@@ -109,12 +110,13 @@ namespace Porject_Library_Management_APP
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(176, 365);
+            this.btnDelete.Location = new System.Drawing.Point(376, 428);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(83, 37);
             this.btnDelete.TabIndex = 24;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -128,6 +130,7 @@ namespace Porject_Library_Management_APP
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtPrice
             // 
@@ -223,6 +226,7 @@ namespace Porject_Library_Management_APP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BooksForm";
             this.Text = "BooksForm";
+            this.Load += new System.EventHandler(this.BooksForm_Load);
             this.BookGroupBox.ResumeLayout(false);
             this.BookGroupBox.PerformLayout();
             this.ResumeLayout(false);

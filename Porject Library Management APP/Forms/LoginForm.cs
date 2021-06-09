@@ -12,21 +12,28 @@ namespace Porject_Library_Management_APP
 {
     public partial class LoginForm : Form
     {
-        List<Librarian> LibrariansList = new List<Librarian>();
-        MenuForm menuForm = new MenuForm();
+        static List<Librarian> LibrariansList = new List<Librarian>();
+        MenuForm menuForm = new MenuForm(LibrariansList);
         
         public LoginForm()
         {
             InitializeComponent();
         }
-
+        //LibrariansForm Lib = new LibrariansForm(LibrariansList);
         private void LoginForm_Load(object sender, EventArgs e)
         {
             //Default
-            LibrariansList.Add(new Librarian(0,"nkkm","nkkm"));
+            LibrariansList.Add(new Librarian("DEFAULT", "NKKM", "nkkm","37069224820"));
             txtPassword.UseSystemPasswordChar = true;
-            
+
+            txtUsername.Text = "NKKM";
+            txtPassword.Text = "nkkm";
+
+            MessageBox.Show("Default User: NKKM \nPass: nkkm ");
+
         }
+
+        
 
         private void btnLogin_Click(object sender, EventArgs e)
         {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Porject_Library_Management_APP
 {
-    class Student
+    public class Student
     {
         public string Name { get; set; }
         public string Surname { get; set; }

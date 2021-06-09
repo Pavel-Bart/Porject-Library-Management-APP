@@ -99,12 +99,13 @@ namespace Porject_Library_Management_APP
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(175, 367);
+            this.btnDelete.Location = new System.Drawing.Point(396, 420);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(83, 37);
             this.btnDelete.TabIndex = 23;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -118,6 +119,7 @@ namespace Porject_Library_Management_APP
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtPhone
             // 
@@ -200,6 +202,7 @@ namespace Porject_Library_Management_APP
             this.lstLibrarian.Name = "lstLibrarian";
             this.lstLibrarian.Size = new System.Drawing.Size(387, 244);
             this.lstLibrarian.TabIndex = 26;
+            this.lstLibrarian.SelectedIndexChanged += new System.EventHandler(this.lstLibrarian_SelectedIndexChanged);
             // 
             // LibrariansForm
             // 
@@ -223,6 +226,7 @@ namespace Porject_Library_Management_APP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LibrariansForm";
             this.Text = "LibrariansForm";
+            this.Load += new System.EventHandler(this.LibrariansForm_Load);
             this.LibGroupBox.ResumeLayout(false);
             this.LibGroupBox.PerformLayout();
             this.ResumeLayout(false);

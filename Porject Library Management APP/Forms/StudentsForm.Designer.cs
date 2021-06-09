@@ -83,6 +83,7 @@ namespace Porject_Library_Management_APP.ZForms
             // btnHome
             // 
             this.btnHome.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnHome.Location = new System.Drawing.Point(12, 500);
@@ -159,6 +160,7 @@ namespace Porject_Library_Management_APP.ZForms
             // 
             // cBoxClass
             // 
+            this.cBoxClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cBoxClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cBoxClass.FormattingEnabled = true;
             this.cBoxClass.Items.AddRange(new object[] {
@@ -177,7 +179,7 @@ namespace Porject_Library_Management_APP.ZForms
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAdd.Location = new System.Drawing.Point(44, 374);
+            this.btnAdd.Location = new System.Drawing.Point(205, 369);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(83, 37);
             this.btnAdd.TabIndex = 12;
@@ -191,12 +193,13 @@ namespace Porject_Library_Management_APP.ZForms
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDelete.Location = new System.Drawing.Point(187, 374);
+            this.btnDelete.Location = new System.Drawing.Point(387, 432);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(83, 37);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lstStudents
             // 
